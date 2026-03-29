@@ -14,6 +14,10 @@ public class Program
         Root root = data;
         Console.WriteLine(root.WhoAmI);
 
+        // Ambos não compilam
+        // Root.ChildA childA = new Root.ChildA();
+        // Root.ChildA childA = new Root.ChildA(data);
+
         switch (root)
         {
             case Root.ChildA a:
